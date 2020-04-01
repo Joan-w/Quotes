@@ -10,8 +10,8 @@ export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
     // new Quote(1,'"Work hard today for a better tomorrow"', "Eustus", new Date(2022,0,14)),
-    new Quote('"Steadfastly seeking excellence"', "Nelson Mandela", "Simon", new Date(2020,2,11)),
-    new Quote('"Never do anything to impress others, impress yourself first"', "Joan Kinyua", "Joan", new Date(2018,1,11)),
+    // new Quote('"Steadfastly seeking excellence"', "Nelson Mandela", "Simon", new Date(2020,2,11)),
+    new Quote('"Never do anything to impress others, impress yourself first"', "Joan Kinyua", "Joan", new Date(2020,1,11)),
   ];
 
   deleteQuote(isDelete, index){
