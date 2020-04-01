@@ -1,34 +1,35 @@
 
-<div class="container-fluid" style="background-color: crimson;">
-<div class="container" style="background-color: rgb(218, 203, 203); border-radius: 30px;">
-    <h1 style="text-align: center;">My Quotes</h1>
-<hr>
-<div class="row">
-    <div class="col-md-6">
-        <app-quote-form (publishQuote)='publishNewQuote($event)'></app-quote-form>
-    </div>
-    <div class="col-md-6">
-        <h2 class="text-center">Published Quotes:</h2>
+    <div class="container-fluid" style="background-color: crimson;">
         <br>
-        <hr>
-        <div *ngFor='let quote of quotes;let i = index'>
-            <div class="card">
-                <div class="card-body">
-                    <p style="text-align: center; font-style: italic; font-weight: 700; 
-                    font-family: monospace; font-size: 20px;">{{quote.name}}</p>
-                </div>
-                <div class="card-footer">
-                    <app-votes></app-votes>
-                    <br>
-                    <p style="font-family: 'Times New Roman', Times, serif; font-size: 13.5px; font-weight: 750; color: black; 
-                    text-align: center;">Published {{quote.completeDate|relativeTime}} by {{quote.author}}.</p>
-                </div>
+        <div class="container" style="background-color: rgb(218, 203, 203); border-radius: 30px;">
+            <h1 style="text-align: center;">My Quotes</h1>
+            <hr>
+            <div class="row">
+            <div class="col-md-6">
+                <app-quote-form (publishQuote)='publishNewQuote($event)'></app-quote-form>
             </div>
-            <br>
-            <app-quote-detail [quote]='quote' (isDelete) = 'deleteQuote($event,i)'></app-quote-detail>
-            <br>
+            <div class="col-md-6">
+                <h2 class="text-center">Published Quotes:</h2>
+                <br>
+            <hr>
+            <div *ngFor='let quote of quotes;let i = index'>
+                <div class="card">
+                    <div class="card-body">
+                        <p style="text-align: center; font-style: italic; font-weight: 700; 
+                        font-family: monospace; font-size: 20px;">{{quote.name}}</p>
+                    </div>
+                    <div class="card-footer">
+                        <app-votes></app-votes>
+                        <br>
+                        <p style="font-family: 'Times New Roman', Times, serif; font-size: 13.5px; font-weight: 750; color: black; 
+                        text-align: center;">Published {{quote.completeDate|relativeTime}} by {{quote.author}}.</p>
+                    </div>
+                </div>
+                <br>
+                <app-quote-detail [quote]='quote' (isDelete) = 'deleteQuote($event,i)'></app-quote-detail>
+                <br>
+            </div>
+        </div>
         </div>
     </div>
-</div>
-</div>
-</div>
+    </div>

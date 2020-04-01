@@ -9,9 +9,9 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
-    new Quote(1,'"Work hard today for a better tomorrow"', "Eustus", new Date(2022,0,14)),
-    new Quote(2,'"Steadfastly seeking excellence"', "Simon", new Date(2020,2,11)),
-    new Quote(3,'"Never do anything to impress others, impress yourself first"', "Joan", new Date(2018,1,11)),
+    // new Quote(1,'"Work hard today for a better tomorrow"', "Eustus", new Date(2022,0,14)),
+    // new Quote(2,'"Steadfastly seeking excellence"', "Simon", new Date(2020,2,11)),
+    // new Quote(3,'"Never do anything to impress others, impress yourself first"', "Joan", new Date(2018,1,11)),
   ];
 
   deleteQuote(isDelete, index){
@@ -28,7 +28,7 @@ export class QuoteComponent implements OnInit {
     let quoteLength = this.quotes.length;
     quote.id = quoteLength+1;
     quote.completeDate = new Date(quote.completeDate)
-    this.quotes.push(quote)
+    this.quotes.unshift(quote)
   }
 
   constructor() { }
