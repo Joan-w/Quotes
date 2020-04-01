@@ -16,13 +16,13 @@
                 <div class="card">
                     <div class="card-body">
                         <p style="text-align: center; font-style: italic; font-weight: 700; 
-                        font-family: monospace; font-size: 20px;">{{quote.name}}</p>
+                        font-family: monospace; font-size: 20px;">{{quote.name}} <br> by <br>{{quote.author}}.</p>
                     </div>
                     <div class="card-footer">
                         <app-votes></app-votes>
                         <br>
                         <p style="font-family: 'Times New Roman', Times, serif; font-size: 13.5px; font-weight: 750; color: black; 
-                        text-align: center;">Published {{quote.completeDate|relativeTime}} by {{quote.author}}.</p>
+                        text-align: center;">Published {{quote.completeDate|relativeTime}} by {{quote.publisher}}.</p>
                     </div>
                 </div>
                 <br>

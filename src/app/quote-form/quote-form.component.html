@@ -14,10 +14,19 @@
     </div>
 
     <div class="form-group">
-        <label style="font-weight: 800;" for="author">Publisher:</label>
+        <label style="font-weight: 800;" for="author">Author:</label>
         <input class="form-control" type="text" required id="author" [(ngModel)]="newQuote.author" name="author" #author='ngModel'>
         <p style="font-weight: 800;">Display: {{newQuote.author}}</p>
         <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+            <p>Name is required</p>
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label style="font-weight: 800;" for="publisher">Publisher:</label>
+        <input class="form-control" type="text" required id="publisher" [(ngModel)]="newQuote.publisher" name="publisher" #publisher='ngModel'>
+        <p style="font-weight: 800;">Display: {{newQuote.publisher}}</p>
+        <div [hidden]="publisher.valid || publisher.pristine" class="alert alert-danger">
             <p>Name is required</p>
         </div>
     </div>
