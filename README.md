@@ -11,6 +11,27 @@ Joan Kinyua
 
 An angular app where one can post a quote and have a real time observation of the likes/dislikes from other community members.
 
+
+| Inputs.                  | Description.                                            |
+|--------------------------|---------------------------------------------------------|
+| Quote                    | Publishing the quote                                    |
+|                          |                                                         |
+| Publisher                | Your name                                               |
+|                          |                                                         |
+| Quote                    | Favourite quote.                                        |
+|                          |                                                         |
+| Author                   | Credits of the original author.                         |
+|                          |                                                         |
+| **Behaviour**            | **Description**                                         |
+|                          |                                                         |
+| Click Quote              | Post your name and quote details                        |
+|                          |                                                         |
+|                          |                          |                              |
+| Click delete             | To delete a quote                                       |
+|                          |                                                         |
+| click upvote/downvote    | To like or dislike a quote                              |
+
+
 ## Technologies used
 
 Bootstrap - To make the app responsive.
