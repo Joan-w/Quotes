@@ -14,7 +14,7 @@
         </div>
 
         <div class="form-group">
-            <label style="font-weight: 800;" for="author">Author:</label>
+            <label style="font-weight: 800;" for="author">Author of the quote:</label>
             <input class="form-control" type="text" required id="author" [(ngModel)]="newQuote.author" name="author" #author='ngModel'>
             <p style="font-weight: 800;">Display: {{newQuote.author}}</p>
             <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
